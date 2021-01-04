@@ -6,6 +6,7 @@ metadata:
   labels:
     app: rollouts-demo
 spec:
+  type: NodePort
   ports:
     - port: 80
       targetPort: http
@@ -14,4 +15,3 @@ spec:
       nodePort: 30963
   selector:
     app: rollouts-demo
-  type: LoadBalancer

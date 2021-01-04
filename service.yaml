@@ -5,11 +5,8 @@ metadata:
   name: rollouts-demo
   labels:
     app: rollouts-demo
-  annotations:
-    consul.hashicorp.com/service-sync: 'true'
-    consul.hashicorp.com/service-name: 'discovery-sellerads-rollouts-demo'
-    consul.hashicorp.com/service-tags: 'app=rollouts-demo-service,team=discovery-sellerads,backend=http,internal-lb'
 spec:
+  type: NodePort
   ports:
     - port: 80
       targetPort: http
