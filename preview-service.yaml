@@ -11,7 +11,7 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
-      nodePort: 30960
+      nodePort: 30962
   selector:
     app: rollouts-demo
   type: LoadBalancer
