@@ -35,6 +35,10 @@ spec:
     blueGreen:
       activeService: rollouts-demo
       previewService: rollouts-demo-preview
+      prePromotionAnalysis:
+        templates:
+        - templateName: random-fail
+        - templateName: always-pass
 #      canary: 
 #        steps:
 #        - setWeight: 20
