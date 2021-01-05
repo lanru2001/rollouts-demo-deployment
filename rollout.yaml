@@ -38,7 +38,6 @@ spec:
       prePromotionAnalysis:
         templates:
         - templateName: random-fail
-        - templateName: always-pass
 #      canary: 
 #        steps:
 #        - setWeight: 20
